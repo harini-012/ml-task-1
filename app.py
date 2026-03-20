@@ -14,6 +14,8 @@ def load_data():
 df=load_data()
 st.subheader("Dataset preview")
 st.write(df.head())
+st.subheader("📊 Dataset Statistics")
+st.write(df.describe())
 features=['Adult Mortality','Alcohol','GDP','Schooling',' HIV/AIDS']
 target='Life expectancy '
 X=df[features]
